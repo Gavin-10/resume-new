@@ -1,0 +1,9 @@
+@use './app/styles/colors';
+@use './app/styles/overrides';
+
+html, body { height: 100%; }
+body { 
+    margin: 0; 
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    color: white 
+}

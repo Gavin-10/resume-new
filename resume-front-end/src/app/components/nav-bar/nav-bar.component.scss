@@ -1,0 +1,23 @@
+@use '../../styles/breakpoints';
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+button {
+    margin-left: 8px;
+}
+
+.nav-buttons {
+    @media (max-width: breakpoints.$mobile-size) {
+        display: none;
+    }
+}
+
+.menu {
+    display: none;
+
+    @media (max-width: breakpoints.$mobile-size) {
+        display: block;
+    }
+}

@@ -1,0 +1,25 @@
+@use '@angular/material' as mat;
+@use './colors.scss';
+
+body {
+    background-color: colors.$neutral-dark;
+    color: colors.$neutral-dark;
+}
+
+:root {
+
+    @include mat.toolbar-overrides((
+        container-background-color: colors.$primary,
+        container-text-color: colors.$primary-light-text,
+    ));
+
+    @include mat.card-overrides((
+        //subtitle-text-color: orange,
+        elevated-container-color: colors.$neutral-dark-accent,
+    ));
+
+    @include mat.button-overrides((
+        filled-container-color: colors.$secondary,
+        filled-label-text-color: colors.$secondary-light-text,
+    ));
+}
