@@ -1,5 +1,6 @@
 @use '../../styles/breakpoints';
 @use '../../styles/helpers';
+@use '../../styles/colors';
 
 img {
     height: 400px;
@@ -16,6 +17,10 @@ img {
     animation: fade-in-bottom;
     animation-duration: 1s;
     animation-fill-mode: both;
+
+    @media (max-width: breakpoints.$image-resize) {
+        display: none;
+    }
 }
 
 .second {
@@ -24,10 +29,6 @@ img {
     animation-duration: 1s;
     animation-delay: 0.25s;
     animation-fill-mode: both;
-
-    @media (max-width: breakpoints.$image-resize) {
-        display: none;
-    }
 }
 
 .third {
@@ -43,7 +44,7 @@ img {
 }
 
 .image-group {
-    margin-top: 60px;
+    margin-top: 30px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -78,4 +79,13 @@ h1 {
 
 h2 {
     margin-top: 8px;
+}
+
+.image-source {
+    text-align: center;
+    color: colors.$dark-text-accent;
+}
+
+a {
+    color: colors.$dark-text-accent;
 }

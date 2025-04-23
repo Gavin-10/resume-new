@@ -1,0 +1,43 @@
+# See https://docs.github.com/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
+
+# Compiled output
+/resume-front-end/dist
+/resume-front-end/tmp
+/resume-front-end/out-tsc
+/resume-front-end/bazel-out
+
+# Node
+/node_modules
+/resume-front-end/node_modules
+/resume-front-end/npm-debug.log
+/resume-front-end/yarn-error.log
+
+# IDEs and editors
+.idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# Visual Studio Code
+/resume-front-end/.vscode/*
+/resume-front-end/!.vscode/settings.json
+/resume-front-end/!.vscode/tasks.json
+/resume-front-end/!.vscode/launch.json
+/resume-front-end/!.vscode/extensions.json
+/resume-front-end/.history/*
+
+# Miscellaneous
+/resume-front-end/.angular/cache
+/resume-front-end/.sass-cache/
+/resume-front-end/connect.lock
+/resume-front-end/coverage
+/resume-front-end/libpeerconnection.log
+/resume-front-end/testem.log
+/resume-front-end/typings
+
+# System files
+/resume-front-end/.DS_Store
+/resume-front-end/Thumbs.db
