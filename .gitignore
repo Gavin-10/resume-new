@@ -7,7 +7,7 @@
 /resume-front-end/bazel-out
 
 # Node
-node_modules
+*node_modules/*
 /resume-front-end/node_modules
 /resume-front-end/npm-debug.log
 /resume-front-end/yarn-error.log
