@@ -1,11 +1,8 @@
 @use '../../styles/breakpoints';
+@use '../../styles/helpers';
 
 .example-spacer {
     flex: 1 1 auto;
-}
-
-button {
-    margin-left: 8px;
 }
 
 .nav-buttons {

@@ -14,12 +14,16 @@ body {
     ));
 
     @include mat.card-overrides((
-        //subtitle-text-color: orange,
         elevated-container-color: colors.$neutral-dark-accent,
     ));
 
     @include mat.button-overrides((
         filled-container-color: colors.$secondary,
         filled-label-text-color: colors.$secondary-light-text,
+    ));
+
+    @include mat.menu-overrides((
+        container-color: colors.$neutral-dark-accent,
+        item-label-text-color: white,
     ));
 }

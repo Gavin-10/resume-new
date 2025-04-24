@@ -1,34 +1,73 @@
+@use './breakpoints';
+
 .container {
     margin: auto;
     max-width: 1500px;
     width: 85%;
 }
 
-.extra-padding {
-    padding: 16px;
-}
-
-.mt {
+.margin-top {
     margin-top: 8px;
 }
 
-.mb {
+.margin-bottom {
     margin-bottom: 8px;
 }
 
-.mx {
+.marginX {
     margin-top: 8px;
     margin-bottom: 8px;
 }
 
-.mr {
+.margin-right {
     margin-right: 8px;
+}
+
+.margin-left {
+    margin-left: 8px;
 }
 
 .padding {
     padding: 8px;
 }
 
+.extra-padding {
+    padding: 16px;
+}
+
+.paddingX {
+    padding: 0;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.paddingY {
+    padding: 0;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
 .test {
     border: solid red;
+}
+
+.large-title {
+    font-size: 5rem;
+    z-index: 5;
+    margin-top: -30px;
+    margin-bottom: 25px;
+    letter-spacing: .25rem;
+    text-align: center;
+
+    @media (max-width: breakpoints.$mobile-size) {
+        margin-top: -40px;
+        font-size: 3.5rem;
+    }
+}
+
+.simple-center {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 }

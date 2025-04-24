@@ -2,10 +2,29 @@
 @use '../../styles/helpers';
 @use '../../styles/colors';
 
+.image-source {
+    text-align: center;
+    color: colors.$dark-text-accent;
+}
+
+a {
+    color: colors.$dark-text-accent;
+}
+
+.image-group {
+    margin-top: 30px;
+
+    @media (max-width: breakpoints.$mobile-size) {
+        margin-top: -30px;
+    }
+}
+
+
 img {
     height: 400px;
     width: 33%;
     object-fit: contain;
+    position: relative;
 
     @media (max-width: breakpoints.$image-resize) {
         width: 100%;
@@ -13,7 +32,6 @@ img {
 }
 
 .first {
-    position: relative;
     animation: fade-in-bottom;
     animation-duration: 1s;
     animation-fill-mode: both;
@@ -24,34 +42,20 @@ img {
 }
 
 .second {
-    position: relative;
     animation: fade-in-top;
-    animation-duration: 1s;
     animation-delay: 0.25s;
+    animation-duration: 1s;
     animation-fill-mode: both;
 }
 
 .third {
-    position: relative;
     animation: fade-in-bottom;
-    animation-duration: 1s;
     animation-delay: 0.5s;
+    animation-duration: 1s;
     animation-fill-mode: both;
 
     @media (max-width: breakpoints.$image-resize) {
         display: none;
-    }
-}
-
-.image-group {
-    margin-top: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-
-    @media (max-width: breakpoints.$mobile-size) {
-        margin-top: 0;
     }
 }
 
@@ -63,29 +67,4 @@ img {
 @keyframes fade-in-top {
     0% { opacity: 0; top: -50px; }
     100% { opacity: 1; top: 0px; }
-}
-
-h1 {
-    font-size: 5rem;
-    z-index: 5;
-    margin-top: -25px;
-    margin-bottom: 25px;
-    letter-spacing: .35rem;
-    text-decoration: underline;
-    text-decoration-thickness: 0.25rem;
-    text-underline-offset: 0.5rem;
-    text-align: center;
-}
-
-h2 {
-    margin-top: 8px;
-}
-
-.image-source {
-    text-align: center;
-    color: colors.$dark-text-accent;
-}
-
-a {
-    color: colors.$dark-text-accent;
 }

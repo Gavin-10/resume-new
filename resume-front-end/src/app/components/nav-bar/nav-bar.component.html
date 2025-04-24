@@ -2,11 +2,16 @@
     <span>Gavin McGuinness</span>
     <span class="example-spacer"></span>
     <div class="nav-buttons">
-        <button mat-button>Resume</button>
-        <button mat-button>Contact</button>
-        <button mat-button>Project Gallery</button>
+        <button class="margin-left" mat-button>Resume</button>
+        <button class="margin-left" mat-button>Contact</button>
+        <button class="margin-left" mat-button>Project Gallery</button>
     </div>
-    <button mat-icon-button class="example-icon menu" aria-label="Example icon-button with share icon">
+    <button mat-icon-button [mat-menu-trigger-for]="menu" class="example-icon menu" aria-label="Example icon-button with share icon">
         <mat-icon>menu</mat-icon>
     </button>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item>Resume</button>
+        <button mat-menu-item>Contact</button>
+        <button mat-menu-item>Projects</button>
+    </mat-menu>
 </mat-toolbar>
