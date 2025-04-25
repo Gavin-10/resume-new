@@ -10,7 +10,7 @@ const app = express();
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'resume-front-end', 'dist', 'resume', 'browser')));
 
-app.get('/', (_, res) => {
+app.get(['/', '/resume', '/contact', '/projects'], (_, res) => {
     res.sendFile(path.join(__dirname, 'resume-front-end', 'dist', 'resume', 'browser', 'index.html'));
 });
 
