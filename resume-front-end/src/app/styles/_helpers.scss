@@ -1,4 +1,5 @@
 @use './breakpoints';
+@use './colors';
 
 .container {
     margin: auto;
@@ -67,9 +68,52 @@
     }
 }
 
+.medium-title {
+    font-size: 2.5rem;
+    padding-bottom: 0;
+    color: colors.$dark-text-accent-light;
+
+    @media (max-width: breakpoints.$mobile-size) {
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
+.small-title {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
 .simple-center {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+}
+
+.simple-center-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+
+    @media (max-width: breakpoints.$image-resize) {
+        display: block;
+    }
+}
+
+.list-style {
+    font-size: medium;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 8px;
+}
+
+.darker-text {
+    color: colors.$dark-text-accent-light;
+}
+
+.text-end {
+    text-align: end;
 }

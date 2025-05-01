@@ -27,7 +27,7 @@
     display: flex;
     justify-content: space-between;
     align-items: end;
-    margin-top: -225px;
+    margin-top: -200px;
 
     img {
         width: 300px;
@@ -38,7 +38,7 @@
 
     h1 {
         width: 100%;
-        text-align: center;
+        text-align: end;
     }
 
     @media (max-width: breakpoints.$mobile-size) {
@@ -54,6 +54,7 @@
         h1 {
             margin-top: 8px;
             width: 117%;
+            text-align: center;
         }
     }
 }
