@@ -10,45 +10,8 @@
 <div class="container darker-text">
     <h2 class="medium-title">Overview</h2>
 
-    <mat-card class="extra-padding">
-        <mat-card-title>
-            Summary
-        </mat-card-title>
-        <mat-divider />
-        <mat-card-content class="margin-top">
-            Content Here
-        </mat-card-content>
-    </mat-card>
+    <app-site-card *ngFor="let item of resumeOverview" [title]="item.title" [content]="item.content"/>
 
-    <mat-card class="extra-padding margin-top">
-        <mat-card-title>
-            Work Experience
-        </mat-card-title>
-        <mat-divider />
-        <mat-card-content class="margin-top">
-            Content Here
-        </mat-card-content>
-    </mat-card>
-
-    <mat-card class="extra-padding margin-top">
-        <mat-card-title>
-            About Me
-        </mat-card-title>
-        <mat-divider />
-        <mat-card-content class="margin-top">
-            Content Here
-        </mat-card-content>
-    </mat-card>
-
-    <mat-card class="extra-padding  margin-top">
-        <mat-card-title>
-            Skills
-        </mat-card-title>
-        <mat-divider />
-        <mat-card-content class="margin-top center-between">
-            Content Here
-        </mat-card-content>
-    </mat-card>
 </div>
 
 <div class="temp">
