@@ -59,6 +59,20 @@
     }
 }
 
+.list-view {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.list {
+    width: 25%;
+
+    @media (max-width: breakpoints.$mobile-size) {
+        width: 50%;
+    }
+}
+
 .temp {
     display: flex;
     justify-content: center;

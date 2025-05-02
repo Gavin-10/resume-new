@@ -10,6 +10,5 @@ import { MatDividerModule } from '@angular/material/divider';
 })
 export class SiteCardComponent {
   title = input("");
-  content = input("");
 
 }
