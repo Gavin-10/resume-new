@@ -1,4 +1,4 @@
-import { Component, input, computed } from '@angular/core';
+import { Component, input, computed, booleanAttribute } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
 
@@ -9,6 +9,13 @@ import { MatDividerModule } from '@angular/material/divider';
   styleUrl: './site-card.component.scss'
 })
 export class SiteCardComponent {
-  title = input("");
-
+  title = input("Title");
+  hasActions = input(false, {transform: booleanAttribute});
+  actionDisplay = computed(() => {
+    if (this.hasActions()) {
+      return "";
+    } else {
+      return "no-display";
+    }
+  });
 }

@@ -1,12 +1,37 @@
 @use './breakpoints';
 @use './colors';
 
+
+//Containers
 .container {
     margin: auto;
     max-width: 1500px;
     width: 85%;
 }
 
+.page-bottom-margin {
+    height: 48px;
+}
+
+.simple-center {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.simple-center-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+
+    @media (max-width: breakpoints.$image-resize) {
+        display: block;
+    }
+}
+
+//Margins
 .margin-top {
     margin-top: 8px;
 }
@@ -32,6 +57,8 @@
     margin-left: 8px;
 }
 
+
+//Paddings
 .padding {
     padding: 8px;
 }
@@ -52,10 +79,7 @@
     padding-bottom: 8px;
 }
 
-.test {
-    border: solid red;
-}
-
+//Titles
 .large-title {
     font-size: 5rem;
     letter-spacing: .25rem;
@@ -84,24 +108,16 @@
     margin-bottom: 0;
 }
 
-.simple-center {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
+//Text Styles
+.darker-text {
+    color: colors.$dark-text-accent-light;
 }
 
-.simple-center-between {
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
-    flex-wrap: wrap;
-
-    @media (max-width: breakpoints.$image-resize) {
-        display: block;
-    }
+.text-end {
+    text-align: end;
 }
 
+//List Style
 .list-style {
     font-size: medium;
     list-style-type: none;
@@ -110,10 +126,7 @@
     padding-top: 8px;
 }
 
-.darker-text {
-    color: colors.$dark-text-accent-light;
-}
-
-.text-end {
-    text-align: end;
+//Debug
+.test {
+    border: solid red;
 }

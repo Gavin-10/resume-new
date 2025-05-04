@@ -8,19 +8,20 @@
 
 <div class="container">
     <h1 class="large-title title-adjustment">Welcome</h1>
-    <mat-card class="extra-padding darker-text">
-        <mat-card-header class="paddingX">
-            <h2>Exciting News!</h2>
-        </mat-card-header>
-        <mat-divider />
-        <mat-card-content class="margin-top padding">
-            You have caught my website at an exciting time! As it's still in the early stages, things may not work
-            quite as expected. But do not fear! Updates will be coming almost daily and it will be complete in no 
-            time! Enjoy! In the future, more information will be displayed about the website bellow. Feel free to 
-            check out the project on Git Hub with the link bellow.
-        </mat-card-content>
+
+    <app-site-card class="darker-text" title="Exciting News!" hasActions="true">
+        You have caught my website at an exciting time! As it's still in the early stages, things may not work
+        quite as expected. But do not fear! Updates will be coming almost daily and it will be complete in no 
+        time! Enjoy! In the future, more information will be displayed about the website bellow. Feel free to 
+        check out the project on Git Hub with the link bellow.
+        <br />
+        <br />
+        Update: Check out the resume page for the finalized content layout (and the repo for some exciting 
+        component reusage ie all the cards). My info will be populated there in the following days and images
+        shortly after that.
+
         <mat-card-actions>
             <button mat-flat-button (click)="repositoryLink()">Repository</button>
         </mat-card-actions>
-    </mat-card>
+    </app-site-card>
 </div>

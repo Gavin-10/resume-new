@@ -1,11 +1,14 @@
 
 
 <mat-card class="extra-padding margin-bottom">
-    <mat-card-title>
-        {{title()}}
+    <mat-card-title class="margin-top">
+        <strong>{{title()}}</strong>
     </mat-card-title>
     <mat-divider />
-    <mat-card-content class="margin-top">
-        <ng-content />
+    <mat-card-content class="marginX">
+        <ng-content>Default Body</ng-content>
     </mat-card-content>
+    <div [class]="actionDisplay()">
+        <ng-content select="mat-card-actions"></ng-content>
+    </div>
 </mat-card>
