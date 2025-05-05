@@ -10,10 +10,12 @@
 <div class="container darker-text">
     <h2 class="medium-title">Overview</h2>
 
-    <app-site-card *ngFor="let item of resumeOverview" [title]="item.title">{{item.content}}</app-site-card>
+    <app-site-card [title]="summary.title">{{summary.content}}</app-site-card>
+    <app-site-card [title]="experience.title">{{experience.content}}</app-site-card>
+    <app-site-card [title]="aboutMe.title">{{aboutMe.content}}</app-site-card>
     <app-site-card title="Skills">
         <div class="list-view">
-            <app-site-list class="list" *ngFor="let list of resumeSkills" [title]="list.title" [items]="list.items"></app-site-list>
+            <app-site-list class="list" *ngFor="let list of skills" [title]="list.title" [items]="list.items"></app-site-list>
         </div>
     </app-site-card>
 
