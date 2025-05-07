@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, computed, input } from '@angular/core';
 import { NgFor } from '@angular/common';
 import { MatDivider } from '@angular/material/divider';
 
@@ -10,5 +10,14 @@ import { MatDivider } from '@angular/material/divider';
 })
 export class SiteListComponent {
   title = input("");
+  subtitle = input("");
   items = input<string[]>()
+
+  subtitleClass = computed(() => {
+    if (this.subtitle() === "") {
+      return "no-display";
+    }
+
+    return "";
+  });
 }

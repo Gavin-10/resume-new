@@ -1,5 +1,22 @@
 
-{
-    "title": "Work Experience",
-    "content": "Content Here"
-}
+[
+    {
+        "title": "Digital Projection - Mechanical Engineer Intern",
+        "subtitle": "February - August 2023",
+        "items": [
+            "Used solidworks and creative design methodology to reduce custom display thickness by 75%",
+            "Organized parts file database, reducing part lookup time by 60%",
+            "Redesigned display brackets for consistent display thickness through product lineup",
+            "Designed custom projector mounts"
+        ]
+    },
+    {
+        "title": "MUI: Open Source Contributor",
+        "subtitle": "May 2024 - January 2025",
+        "items": [
+            "Implemented loading spinners into default button from experimental loading button",
+            "Worked with team, reducing total subtree size of base button",
+            "Improved accessibility user experience in modal"
+        ]
+    }
+]

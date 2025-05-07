@@ -65,12 +65,21 @@
     flex-wrap: wrap;
 }
 
-.list {
-    width: 25%;
+@mixin list($ratio) {
+    width: $ratio;
 
     @media (max-width: breakpoints.$mobile-size) {
-        width: 50%;
+
+        width: $ratio * 2;
     }
+}
+
+.experience-list {
+    @include list(50%)
+}
+
+.skill-list {
+    @include list(25%)
 }
 
 .temp {
