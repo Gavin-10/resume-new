@@ -1,6 +1,7 @@
 
 
-<mat-card class="extra-padding margin-bottom">
+<mat-card class="extra-padding margin-bottom" [class]="background()">
+    <ng-content select="img"/>
     <mat-card-title class="margin-top">
         <strong>{{title()}}</strong>
     </mat-card-title>

@@ -1,3 +1,37 @@
+
+<div class="container margin-top paddingY">
+    <div class="contact-cards paddingY">
+        <app-site-card title="Email" class="contact-card margin-top" hasActions="true" background="secondary">
+            <img mat-card-image src="email.png"/>
+
+            {{email}}
+
+            <mat-card-actions>
+                <button mat-flat-button>Copy</button>
+            </mat-card-actions>
+        </app-site-card>
+
+        <app-site-card title="Github" class="contact-card margin-top" hasActions="true" background="secondary">
+            <img mat-card-image src="github.png"/>
+
+            {{github}}
+
+            <mat-card-actions>
+                <button mat-flat-button>Go To</button>
+            </mat-card-actions>
+        </app-site-card>
+
+        <app-site-card title="LinkedIn" class="contact-card margin-top" hasActions="true" background="secondary">
+            <img mat-card-image src="linkedin.png"/>
+            {{linkedIn}}
+
+            <mat-card-actions>
+                <button mat-flat-button>Go To</button>
+            </mat-card-actions>
+        </app-site-card>
+    </div>
+</div>
+
 <div class="temp">
     <mat-icon fontIcon="construction"/>
     <p>Contact Page Under Construction</p>

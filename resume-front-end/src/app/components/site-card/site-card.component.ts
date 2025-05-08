@@ -11,6 +11,8 @@ import { MatDividerModule } from '@angular/material/divider';
 export class SiteCardComponent {
   title = input("Title");
   hasActions = input(false, {transform: booleanAttribute});
+  background = input("");
+
   actionDisplay = computed(() => {
     if (this.hasActions()) {
       return "";

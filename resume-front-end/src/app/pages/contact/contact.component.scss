@@ -1,4 +1,26 @@
 @use '../../styles/colors';
+@use '../../styles/breakpoints';
+@use '../../styles/helpers';
+
+img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+.contact-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-card {
+    width: 30%;
+
+    @media (max-width: breakpoints.$mobile-size-small) {
+        width: 100%;
+    }
+}
 
 .temp {
     display: flex;

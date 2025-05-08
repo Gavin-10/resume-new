@@ -1,1 +1,14 @@
 @use '../../styles/helpers';
+@use '../../styles/colors';
+
+.primary {
+    background-color: colors.$primary-dark-text;
+}
+
+.secondary {
+    background-color: colors.$secondary-dark-text;
+}
+
+.tertiary {
+    background-color: colors.$tertiary-dark-text;
+}
