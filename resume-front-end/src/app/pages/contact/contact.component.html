@@ -1,13 +1,18 @@
 
-<div class="container margin-top paddingY">
-    <div class="contact-cards paddingY">
+<div class="contact-title">
+    <h1 class="large-title">Contact Me Anytime</h1>
+    <p>AND GET A FAST RESPONSE</p>
+</div>
+
+<div class="container negative-margin">
+    <div class="contact-cards">
         <app-site-card title="Email" class="contact-card margin-top" hasActions="true" background="secondary">
             <img mat-card-image src="email.png"/>
 
             {{email}}
 
             <mat-card-actions>
-                <button mat-flat-button>Copy</button>
+                <button mat-flat-button (click)="copyEmail()">Copy</button>
             </mat-card-actions>
         </app-site-card>
 
@@ -17,7 +22,7 @@
             {{github}}
 
             <mat-card-actions>
-                <button mat-flat-button>Go To</button>
+                <button mat-flat-button (click)="goToGithub()">Go To</button>
             </mat-card-actions>
         </app-site-card>
 
@@ -26,7 +31,7 @@
             {{linkedIn}}
 
             <mat-card-actions>
-                <button mat-flat-button>Go To</button>
+                <button mat-flat-button (click)="goToLinkedIn()">Go To</button>
             </mat-card-actions>
         </app-site-card>
     </div>

@@ -30,4 +30,9 @@ mat-card-actions {
         container-color: colors.$neutral-dark-accent,
         item-label-text-color: white,
     ));
+
+    @include mat.snack-bar-overrides((
+        container-color: colors.$neutral-dark-accent,
+        button-color: colors.$tertiary,
+    ));
 }
