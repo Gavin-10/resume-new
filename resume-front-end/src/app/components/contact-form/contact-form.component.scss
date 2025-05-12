@@ -1,0 +1,15 @@
+
+@use '../../styles/helpers';
+@use '../../styles/colors';
+
+mat-card {
+    background-color: colors.$neutral-dark-accent;
+}
+
+mat-form-field {
+    width: 100%;
+}
+
+.form-margin-top {
+    margin-top: 28px;
+}

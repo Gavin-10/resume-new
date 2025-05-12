@@ -5,10 +5,11 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSnackBar } from '@angular/material/snack-bar';
 
 import { SiteCardComponent } from '../../components/site-card/site-card.component';
+import { ContactFormComponent } from '../../components/contact-form/contact-form.component';
 
 @Component({
   selector: 'app-contact',
-  imports: [MatIconModule, MatCardModule, SiteCardComponent, MatButtonModule],
+  imports: [MatIconModule, MatCardModule, SiteCardComponent, MatButtonModule, ContactFormComponent],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
@@ -21,7 +22,11 @@ export class ContactComponent {
 
   copyEmail() {
     navigator.clipboard.writeText('mcguinness52626@gmail.com');
-    this.snackBar.open("Email Copied", "Dismiss")
+    if (window.innerWidth >= 800) {
+      this.snackBar.open("Email Copied", "Dismiss");
+    } else {
+      window.alert("Email Copied");
+    }
   }
 
   goToGithub() {
