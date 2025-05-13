@@ -3,35 +3,50 @@
     <mat-card-title class="margin-top"><strong>Contact Form</strong></mat-card-title>
     <mat-divider />
     <mat-card-content class="form-margin-top">
-        <mat-form-field appearance="outline">
-            <mat-label>First Name</mat-label>
-            <input matInput/>
-        </mat-form-field>
+        <form [formGroup]="contactForm" id="message-form">
+            <mat-form-field appearance="outline">
+                <mat-label>First Name</mat-label>
+                <input required formControlName="firstName" type="text" matInput/>
+                @if (contactForm.controls.firstName.hasError('required')) {
+                    <mat-error>First name is required</mat-error>
+                }
+            </mat-form-field>
 
-        <mat-form-field appearance="outline">
-            <mat-label>Last Name</mat-label>
-            <input matInput/>
-        </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Last Name</mat-label>
+                <input required formControlName="lastName" type="text" matInput/>
+                @if (contactForm.controls.firstName.hasError('required')) {
+                    <mat-error>Last name is required</mat-error>
+                }
+            </mat-form-field>
 
-        <mat-form-field appearance="outline">
-            <mat-label>Email</mat-label>
-            <input matInput/>
-        </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Email</mat-label>
+                <input required formControlName="email" type="email" matInput/>
+                @if (contactForm.controls.email.hasError('required')) {
+                    <mat-error>Email is required</mat-error>
+                }
 
-        <mat-form-field appearance="outline">
-            <mat-label>Company</mat-label>
-            <input matInput/>
-        </mat-form-field>
+                @if (contactForm.controls.email.hasError('email')) {
+                    <mat-error>Enter a valid email</mat-error>
+                }
+            </mat-form-field>
 
-        <mat-form-field appearance="outline">
-            <mat-label>Message</mat-label>
-            <textarea matInput></textarea>
-        </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Company</mat-label>
+                <input formControlName="company" type="text" matInput/>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Message</mat-label>
+                <textarea formControlName="message" matInput></textarea>
+            </mat-form-field>
+        </form>
     </mat-card-content>
 
     <mat-card-actions>
-        <button mat-flat-button>Cancel</button>
+        <button mat-flat-button (click)="this.contactForm.reset()">Cancel</button>
         <span class="spacer"></span>
-        <button mat-flat-button>Submit</button>
+        <button mat-flat-button [disabled]="!contactForm.valid" (click)="onSubmit()">Submit</button>
     </mat-card-actions>
 </mat-card>
