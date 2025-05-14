@@ -10,13 +10,6 @@ import { MatIcon } from '@angular/material/icon';
   styleUrl: './projects.component.scss'
 })
 export class ProjectsComponent {
-  isActive = true
-
-  forward() {
-
-  }
-
-  backward() {
-
-  }
+  links = ['Project 1', 'Project 2', 'Project 3', 'Project 4'];
+  activeLink = this.links[0];
 }

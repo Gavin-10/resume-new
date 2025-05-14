@@ -2,36 +2,6 @@
 @use '../../styles/colors';
 @use '../../styles/helpers';
 @use '../../styles/breakpoints';
-@use '@angular/material' as mat;
-
-mat-tab-group {
-    @media (max-width: breakpoints.$mobile-size) {
-        display: none;
-    }
-}
-
-.mobile-controls {
-    display: none;
-    color: colors.$tertiary;
-
-    @media (max-width: breakpoints.$mobile-size) {
-        display: flex;
-        justify-content: center;
-    }
-}
-
-.nav-button {
-    width: 100%;
-    border-radius: 0;
-}
-
-.mobile-project-view {
-    display: none;
-
-    @media (max-width: breakpoints.$mobile-size) {
-        display: block;
-    }
-}
 
 .temp {
     display: flex;
@@ -47,41 +17,5 @@ mat-tab-group {
     @media (max-width: 500px) {
         transform: scale(1.25);
         max-width: 80%;
-    }
-}
-
-.forward {
-    animation-name: moveLeft;
-    animation-name: fromRight;
-    animation-duration: 0.75s;
-}
-
-.backward {
-    animation-name: moveRight;
-    animation-name: fromLeft;
-    animation-duration: 0.75s;
-}
-
-@keyframes moveLeft {
-    to {
-        transform: translateX(-200%);
-    }
-}
-
-@keyframes moveRight {
-    to {
-        transform: translateX(200%);
-    }
-}
-
-@keyframes fromLeft {
-    from {
-        transform: translateX(-200%);
-    }
-}
-
-@keyframes fromRight {
-    from {
-        transform: translateX(200%);
     }
 }

@@ -1,30 +1,13 @@
 
-<mat-tab-group>
-  <mat-tab label="Project 1"> 
-    <div class="container extra-margin-top">
-        <ng-content matTabContent>
-            Content
-        </ng-content>
-    </div>
-  </mat-tab>
-  <mat-tab label="Project 2">
-    <div class="container extra-margin-top">
-        <ng-content matTabContent>
-            Content
-        </ng-content>
-    </div>
-  </mat-tab>
-  <mat-tab label="Project 3"> 
-    <div class="container extra-margin-top">
-        <ng-content matTabContent>
-            Content
-        </ng-content>
-    </div>
-  </mat-tab>
-</mat-tab-group>
+<nav mat-tab-nav-bar [tabPanel]="tabPanel">
+  @for (link of links; track link) {
+    <a mat-tab-link (click)="activeLink = link" [active]="activeLink == link">{{link}}</a>
+  }
+</nav>
+<mat-tab-nav-panel #tabPanel></mat-tab-nav-panel>
 
-<div class="container extra-margin-top mobile-project-view">
-    Content
+<div class="container simple-center extra-margin-top mobile-project-view">
+    Content of {{ activeLink }}
 </div>
 
 <div class="temp">
