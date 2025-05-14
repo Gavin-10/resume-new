@@ -53,4 +53,10 @@ html {
         outlined-caret-color: colors.$secondary,
         outlined-input-text-color: colors.$dark-text-accent-light,
     ));
+
+    @include mat.tabs-overrides((
+        active-indicator-color: colors.$tertiary,
+        active-focus-indicator-color: colors.$tertiary,
+        active-hover-indicator-color: colors.$tertiary,
+    ));
 }

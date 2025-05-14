@@ -1,10 +1,11 @@
 import { Component, input, computed, booleanAttribute } from '@angular/core';
+
 import { MatCardModule } from '@angular/material/card';
-import { MatDividerModule } from '@angular/material/divider';
+import { MatDivider } from '@angular/material/divider';
 
 @Component({
   selector: 'app-site-card',
-  imports: [MatCardModule, MatDividerModule],
+  imports: [MatCardModule, MatDivider],
   templateUrl: './site-card.component.html',
   styleUrl: './site-card.component.scss'
 })
