@@ -13,7 +13,6 @@ export class SiteCardComponent {
   title = input("Title");
   hasActions = input(false, {transform: booleanAttribute});
   background = input("");
-  maxHeight = input(false, {transform: booleanAttribute});
 
   actionDisplay = computed(() => {
     if (this.hasActions()) {
@@ -22,12 +21,4 @@ export class SiteCardComponent {
       return "no-display";
     }
   });
-
-  useMaxHeight = computed(() => {
-    if (this.maxHeight()) {
-      return "max-height";
-    } else {
-      return "";
-    }
-  })
 }
