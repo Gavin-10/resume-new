@@ -3,9 +3,11 @@ import { Component } from '@angular/core';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatIcon } from '@angular/material/icon';
 
+import { ProjectInfoComponent } from '../../components/project-info/project-info.component';
+
 @Component({
   selector: 'app-projects',
-  imports: [MatTabsModule, MatIcon],
+  imports: [MatTabsModule, MatIcon, ProjectInfoComponent],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss'
 })

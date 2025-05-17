@@ -1,7 +1,7 @@
 
 <h3 class="list-title">{{title()}}</h3>
 <p [class]="subtitleClass()">{{subtitle()}}</p>
-<mat-divider class="margin-bottom"/>
+<mat-divider class="margin-bottom" [class]="noTitle()"/>
 <ul>
     <li *ngFor="let item of items()">{{item}}</li>
 </ul>

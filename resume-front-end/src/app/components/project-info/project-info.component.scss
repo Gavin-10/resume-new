@@ -1,0 +1,53 @@
+
+@use '../../styles/helpers';
+@use '../../styles/breakpoints';
+@use '@angular/material' as mat;
+
+img {
+    border-radius: 12px;
+    max-width: 30%;
+    object-fit: cover;
+    @extend .margin-right;
+
+    @media (max-width: breakpoints.$mobile-size) {
+        margin-right: 0;
+        max-width: 100%;
+    }
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: breakpoints.$mobile-size) {
+        display: block;
+    }
+}
+
+.project-summary {
+    @extend .margin-left;
+
+    @media (max-width: breakpoints.$mobile-size) {
+        margin-left: 0;
+        margin-top: 16px;
+    }
+}
+
+.project-detail {
+    display: flex;
+    margin-top: 16px;
+
+    @media (max-width: breakpoints.$mobile-size) {
+        display: block;
+    }
+}
+
+.detail-one {
+    width: 50%;
+    @extend .margin-right;
+}
+
+.detail-two {
+    width: 50%;
+    @extend .margin-left;
+}

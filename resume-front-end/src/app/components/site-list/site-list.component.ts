@@ -21,4 +21,12 @@ export class SiteListComponent {
 
     return "";
   });
+
+  noTitle = computed(() => {
+    if (this.title() == "") {
+      return "no-display";
+    } else {
+      return "";
+    }
+  })
 }

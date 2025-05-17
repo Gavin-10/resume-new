@@ -1,15 +1,17 @@
 
 
-<mat-card class="extra-padding margin-bottom" [class]="background()">
+<mat-card class="extra-padding margin-bottom" [class]="background()" [class]="useMaxHeight()">
     <ng-content select="img"/>
-    <mat-card-title class="margin-top">
-        <strong>{{title()}}</strong>
-    </mat-card-title>
-    <mat-divider />
-    <mat-card-content class="marginX">
-        <ng-content>Default Body</ng-content>
-    </mat-card-content>
-    <div [class]="actionDisplay()">
-        <ng-content select="mat-card-actions"></ng-content>
+    <div>
+        <mat-card-title class="margin-top">
+            <strong>{{title()}}</strong>
+        </mat-card-title>
+        <mat-divider />
+        <mat-card-content class="marginX">
+            <ng-content>Default Body</ng-content>
+        </mat-card-content>
+        <div [class]="actionDisplay()">
+            <ng-content select="mat-card-actions"></ng-content>
+        </div>
     </div>
 </mat-card>
