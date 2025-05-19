@@ -1,7 +1,7 @@
 
 
 export interface ListInterface {
-    title: string;
+    title?: string;
     subtitle?: string;
     items: string[];
 }

@@ -1,6 +1,10 @@
 @use '../../styles/helpers';
 @use '../../styles/colors';
 
+mat-card {
+    height: 100%;
+}
+
 .primary {
     background-color: colors.$primary-dark-text;
 }

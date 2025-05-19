@@ -25,6 +25,7 @@ img {
 }
 
 .project-summary {
+    width: 100%;
     @extend .margin-left;
 
     @media (max-width: breakpoints.$mobile-size) {

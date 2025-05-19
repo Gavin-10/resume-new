@@ -1,0 +1,42 @@
+[
+    {
+        "title": "Project 1",
+        "image": "placeholder.webp",
+        "summary": {
+            "title": "Project 1 - Summary",
+            "content": "summary of the project"
+        },
+        "skills": ["Skill 1", "Skill 2", "Skill 3"],
+        "challenges": "Challenges faced during the project"
+    },
+    {
+        "title": "Project 2",
+        "image": "placeholder.webp",
+        "summary": {
+            "title": "Project 2 - Summary",
+            "content": "summary of the project"
+        },
+        "skills": ["Skill 1", "Skill 2", "Skill 3"],
+        "challenges": "Challenges faced during the project"
+    },
+    {
+        "title": "Project 3",
+        "image": "placeholder.webp",
+        "summary": {
+            "title": "Project 3 - Summary",
+            "content": "summary of the project"
+        },
+        "skills": ["Skill 1", "Skill 2", "Skill 3"],
+        "challenges": "Challenges faced during the project"
+    },
+    {
+        "title": "Project 4",
+        "image": "placeholder.webp",
+        "summary": {
+            "title": "Project 4 - Summary",
+            "content": "summary of the project"
+        },
+        "skills": ["Skill 1", "Skill 2", "Skill 3"],
+        "challenges": "Challenges faced during the project"
+    }
+]

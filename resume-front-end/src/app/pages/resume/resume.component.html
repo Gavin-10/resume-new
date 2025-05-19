@@ -11,13 +11,13 @@
     <app-site-card [title]="summary.title">{{summary.content}}</app-site-card>
     <app-site-card title="Experience">
         <div class="list-view">
-            <app-site-list class="experience-list" *ngFor="let item of experience" [title]="item.title" [subtitle]="item.subtitle!" [items]="item.items"/>
+            <app-site-list class="experience-list" *ngFor="let item of experience" [title]="item.title!" [subtitle]="item.subtitle!" [items]="item.items"/>
         </div>
     </app-site-card>
     <app-site-card [title]="aboutMe.title">{{aboutMe.content}}</app-site-card>
     <app-site-card title="Skills">
         <div class="list-view">
-            <app-site-list class="skill-list" *ngFor="let list of skills" [title]="list.title" [items]="list.items"></app-site-list>
+            <app-site-list class="skill-list" *ngFor="let list of skills" [title]="list.title!" [items]="list.items"></app-site-list>
         </div>
     </app-site-card>
 

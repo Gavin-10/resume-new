@@ -1,9 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 
 import { MatCardModule } from '@angular/material/card';
 
 import { SiteCardComponent } from '../site-card/site-card.component';
 import { SiteListComponent } from '../site-list/site-list.component';
+
+import { ProjectInterface } from '../../interfaces/project-interface';
 
 @Component({
   selector: 'app-project-info',
@@ -12,5 +14,6 @@ import { SiteListComponent } from '../site-list/site-list.component';
   styleUrl: './project-info.component.scss'
 })
 export class ProjectInfoComponent {
-  fakeItems = ["Skill 1", "Skill 2", "Skill 3"];
+  projectData = input.required<ProjectInterface>();
+  
 }
