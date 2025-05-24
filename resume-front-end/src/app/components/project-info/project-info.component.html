@@ -3,8 +3,12 @@
         <img [src]="projectData().image" alt="image"/>
 
         <div class="project-summary">
-            <app-site-card [title]="projectData().summary.title" horizontal="true" maxHeight="true">
+            <app-site-card [title]="projectData().summary.title" horizontal="true" maxHeight="true" hasActions="true" gluedActions="true">
                 {{projectData().summary.content}}
+
+                <mat-card-actions align="end">
+                    <button mat-flat-button [disabled]="this.dissabledButton()" (click)="goToButton()">Go To Project</button>
+                </mat-card-actions>
             </app-site-card>
         </div>
     </div>

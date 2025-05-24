@@ -7,11 +7,12 @@
             <strong>{{title()}}</strong>
         </mat-card-title>
         <mat-divider />
-        <mat-card-content class="marginX">
+        <mat-card-content class="marginX" [class.extra-margin]="this.gluedActions()">
             <ng-content>Default Body</ng-content>
         </mat-card-content>
-        <div [class]="actionDisplay()">
+        <div [class.no-display]="!this.hasActions()" [class.glue-actions]="this.gluedActions()">
             <ng-content select="mat-card-actions"></ng-content>
         </div>
     </div>
 </mat-card>
+

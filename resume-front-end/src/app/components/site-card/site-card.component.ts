@@ -13,12 +13,5 @@ export class SiteCardComponent {
   title = input("Title");
   hasActions = input(false, {transform: booleanAttribute});
   background = input("");
-
-  actionDisplay = computed(() => {
-    if (this.hasActions()) {
-      return "";
-    } else {
-      return "no-display";
-    }
-  });
+  gluedActions = input(false, {transform: booleanAttribute});
 }

@@ -16,3 +16,14 @@ mat-card {
 .tertiary {
     background-color: colors.$tertiary-dark-text;
 }
+
+.extra-margin {
+    margin-bottom: 68px;
+}
+
+.glue-actions {
+    @extend .extra-padding;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}

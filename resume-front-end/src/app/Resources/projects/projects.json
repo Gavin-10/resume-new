@@ -1,42 +1,57 @@
 [
     {
-        "title": "Project 1",
+        "title": "This Site",
         "image": "placeholder.webp",
+        "link": "https://github.com/Gavin-10/resume-new",
         "summary": {
-            "title": "Project 1 - Summary",
+            "title": "My Resume Website - Summary",
+            "content": "This website, my all new resume website, showcases a large portion of crucial web development and programming skills I have been working on over the past several years. The biggest change in this website is that it has been built from the ground up using Angular, and Material Angular. In the past, I have used React, along with a combination of other tools to build my fullstack websites, but I have moved to Angular as a personal preference to the opinionated framework, making it easier for me to create full fledged web apps from the ground up without chasing down extra libraries. This project includes an Angular front end, hosted on GCP with an ExpressJS server, which also connects to a FireStore database for the contact page."
+        },
+        "skills": ["Angular", "ExpressJS", "Web Development", "Databases", "GCP"],
+        "challenges": "This project has presented two major challenges for me, both of which have given me crucial growth as a developer. One: bundle size, and Two: styling. The former has been a focus point on making sure that despite only being deployed on one central US server, my site can be quickly loaded from anywhere within the US. I tackled this challenge through a combination of lazy loaded routes, lazy loaded images, and utilization of special build features like tree shaking. For styling, I wanted to make sure this website would be visually appealing as well as functional. The main things I added to make this site pop are animations on initial load, and full-width title banners incorporating gradients for pages."
+    },
+    {
+        "title": "Interpreters",
+        "image": "placeholder.webp",
+        "link": "",
+        "summary": {
+            "title": "Interpreters - Summary",
             "content": "summary of the project"
         },
-        "skills": ["Skill 1", "Skill 2", "Skill 3"],
+        "skills": ["C", "Java", "Data Structures", "VMs", "Design Patterns", "Computational Theory"],
         "challenges": "Challenges faced during the project"
     },
     {
-        "title": "Project 2",
+        "title": "C++",
         "image": "placeholder.webp",
+        "link": "",
         "summary": {
-            "title": "Project 2 - Summary",
+            "title": "C++ - Summary",
             "content": "summary of the project"
         },
-        "skills": ["Skill 1", "Skill 2", "Skill 3"],
+        "skills": ["C++", "Object Oriented Programming", "Data Structures", "Design Patterns"],
         "challenges": "Challenges faced during the project"
     },
     {
-        "title": "Project 3",
+        "title": "Scrumdinger",
         "image": "placeholder.webp",
+        "link": "",
         "summary": {
-            "title": "Project 3 - Summary",
+            "title": "Scrumdinger - Summary",
             "content": "summary of the project"
         },
-        "skills": ["Skill 1", "Skill 2", "Skill 3"],
+        "skills": ["Swift", "SwiftUI", "Swift Data", "XCode", "iOS", "Design Patterns", "Databases"],
         "challenges": "Challenges faced during the project"
     },
     {
-        "title": "Project 4",
+        "title": "MUI",
         "image": "placeholder.webp",
+        "link": "",
         "summary": {
-            "title": "Project 4 - Summary",
+            "title": "MUI - Summary",
             "content": "summary of the project"
         },
-        "skills": ["Skill 1", "Skill 2", "Skill 3"],
+        "skills": ["JavaScript", "React", "Testing", "Teamwork", "Problem Solving"],
         "challenges": "Challenges faced during the project"
     }
 ]
