@@ -16,10 +16,10 @@
         "link": "",
         "summary": {
             "title": "Interpreters - Summary",
-            "content": "summary of the project"
+            "content": "For the past 6 months, I have begun a new journey to creating compilers and interpreters. This fascination started when I looked into ways to contribute to the various tools I use in programming on a daily basis, and decided that language hacking would be a good suit for me. I therefore bought the fantastic book called Crafting Interpreters and began my studies. I have since learned several aspects of language creation, such as how to implement scoping, environments, variable interning, call frames, garbage collection, and so much more. This has truly elevated my understanding of programming in ways I could not imagine, and I am truly looking forward to contributing to languages in the near future. While Lox, the toy language I created directly from the book, is implemented in Java (tree walker) and C (Pratt compiler) separately, I am now reimplementing the language in C++ which will compile an AST to bytecode, and include several modern language features like compound assignment, arrays, lambdas, computed variables, break and continue statements, and more. "
         },
         "skills": ["C", "Java", "Data Structures", "VMs", "Design Patterns", "Computational Theory"],
-        "challenges": "Challenges faced during the project"
+        "challenges": "Needless to say, implementing even these toy languages presented several challenges and opportunities to grow as a programmer, especially in the realm of data structures. Implementing these languages required creating a hash table from scratch in c, something I hadn’t previously done, and which greatly improved my understanding of the structure. Additionally, the garbage collector used graph traversal methods for clean up, specifically a tri-colored graph, which presented several challenges but ultimately helped me further understand that data structure. This is also what brought me into design patterns with the visitor pattern, and allowed me to think much more abstractly about programming problems and their solutions after carefully studying, tracing, and understanding several types of design patterns and how they can better my code."
     },
     {
         "title": "C++",
