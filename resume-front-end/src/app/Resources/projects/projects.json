@@ -24,13 +24,13 @@
     {
         "title": "C++",
         "image": "placeholder.webp",
-        "link": "",
+        "link": "https://github.com/Gavin-10/learn-cpp",
         "summary": {
             "title": "C++ - Summary",
-            "content": "summary of the project"
+            "content": "This project is nothing more than a simple repository I used for learning the fundamentals of C++, as well as design patterns in OOP. This project includes all of the fundamentals through semi advanced concepts in C++, and helped me learn a lot about the C++ programming language, such as the behind the scenes of classes with multi-class inheritance, vtables, preparser techniques, pointer algorithm, and memory management. Additionally, this repository contains several of the most fundamental design pattern principles of OOP, further expanding my knowledge and thought  process for programming. Finally, there is also a subdirectory dedicated to the C++ standard library, going through concurrency with threads, thread pools, futures, atomics and mutexes; as well as containers, IO, Smart Pointers, and other general utilities."
         },
-        "skills": ["C++", "Object Oriented Programming", "Data Structures", "Design Patterns"],
-        "challenges": "Challenges faced during the project"
+        "skills": ["C++", "Object Oriented Programming", "Data Structures", "Design Patterns", "CMake"],
+        "challenges": "The challenges in this project were all about making me think differently for a lower level language, specifically around pointers and memory management. Before C++, I really was clueless as to what stack or heap memory was, because it didn’t matter to me yet in other languages, and while I did a little bit of memory management in Swift, using weak and unowned variables, I didn’t have a full grasp as to what that truly meant. After going through C++, and painstakingly studying pointer algorithm and different memory structures, I now have a much more solid understanding of stack and heap memory, their benefits and drawbacks, pointers, how memory is traversed, pass-by rules, and so much more that not only enables me to take advantage of the full computer in lower level languages, but also gives me a much higher understanding of the higher level languages I use everyday."
     },
     {
         "title": "Scrumdinger",
