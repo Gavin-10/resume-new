@@ -35,13 +35,13 @@
     {
         "title": "Scrumdinger",
         "image": "placeholder.webp",
-        "link": "",
+        "link": "https://github.com/Gavin-10/Scrumdinger-tutorial",
         "summary": {
             "title": "Scrumdinger - Summary",
-            "content": "summary of the project"
+            "content": "Swift has been my wonderful introduction to the world of native app development, and the Scrumdinger tutorial app showcases several of the most important parts of developing both a mobile app in general, and mobile apps for Apple. This app uses a combination of SwiftUI, SwiftData, Foundation, CoreAudio, and other Apple development frameworks to make a full scale production application. This app features several navigation destinations, as well as persistent data, using SwiftData and SQLite, and follows accessibility guidelines, making the user experience for all users. Additionally, in similar tutorial native Apple apps, I have gone through the process of writing unit test code, ensuring successful production, as well as turning apps cross platform, and reusing a large majority of business logic across platforms, while tailoring viewing experiences to each device. "
         },
         "skills": ["Swift", "SwiftUI", "Swift Data", "XCode", "iOS", "Design Patterns", "Databases"],
-        "challenges": "Challenges faced during the project"
+        "challenges": "The two main challenges I faced in this project were learning how to effectively store persistent data and learn about the object graph used by the Apple ecosystem to increase app performance, as well as further learning concurrency models and intros to grand central dispatch, to enable truly performant code. While not all of this is directly showcased in this project, future projects to be posted will incorporate several of the key factors learned through this project."
     },
     {
         "title": "MUI",
