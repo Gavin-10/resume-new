@@ -2,20 +2,3 @@
 @use '../../styles/colors';
 @use '../../styles/helpers';
 @use '../../styles/breakpoints';
-
-.temp {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: auto;
-    margin-top: 24px;
-    color: colors.$dark-text-accent;
-    transform: scale(1.75);
-    max-width: 57%;
-
-    @media (max-width: 500px) {
-        transform: scale(1.25);
-        max-width: 80%;
-    }
-}
