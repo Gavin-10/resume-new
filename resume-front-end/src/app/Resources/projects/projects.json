@@ -1,7 +1,7 @@
 [
     {
         "title": "This Site",
-        "image": "placeholder.webp",
+        "image": "thisSite.png",
         "link": "https://github.com/Gavin-10/resume-new",
         "summary": {
             "title": "My Resume Website - Summary",
@@ -12,7 +12,7 @@
     },
     {
         "title": "Interpreters",
-        "image": "placeholder.webp",
+        "image": "Interpreters.png",
         "link": "",
         "summary": {
             "title": "Interpreters - Summary",
@@ -23,7 +23,7 @@
     },
     {
         "title": "C++",
-        "image": "placeholder.webp",
+        "image": "cppPicture.png",
         "link": "https://github.com/Gavin-10/learn-cpp",
         "summary": {
             "title": "C++ - Summary",
@@ -34,7 +34,7 @@
     },
     {
         "title": "Scrumdinger",
-        "image": "placeholder.webp",
+        "image": "scrumdinger.jpg",
         "link": "https://github.com/Gavin-10/Scrumdinger-tutorial",
         "summary": {
             "title": "Scrumdinger - Summary",
@@ -45,13 +45,13 @@
     },
     {
         "title": "MUI",
-        "image": "placeholder.webp",
-        "link": "",
+        "image": "MUI.png",
+        "link": "https://github.com/mui/material-ui",
         "summary": {
             "title": "MUI - Summary",
-            "content": "summary of the project"
+            "content": "Contributing to MUI was an incredibly important experience for me in my software engineering learning path. This gave me foundational knowledge on how to navigate and code in a large code repository, as well as utilizing version control on a large scale to properly write code. My PRs, adding loading to the base button, and reordering modal action for accessibility users, widened my view for development to not only code, but focus on performance, accessibility, teamwork, and unit testing. Overall, my experience contributing to the MUI open source project has prepared me for my next steps in open source, where I will be turning to either V8 or Swift for a long term, more challenging project, to focus on my goals of contributing to a programming language."
         },
         "skills": ["JavaScript", "React", "Testing", "Teamwork", "Problem Solving"],
-        "challenges": "Challenges faced during the project"
+        "challenges": "The challenges in this project were both about new coding practices, as well as soft skills. Not only was I challenged with incorporating new unit tests, as well as making sure I followed best practices for commits and version control, I was also introduced to working with a group of people in the open source community, where I learned to better communicate, ask question, and bring up new ideas."
     }
 ]
