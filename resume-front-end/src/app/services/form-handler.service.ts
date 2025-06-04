@@ -26,7 +26,7 @@ export class FormHandlerService {
   }
 
   private handleSubmit(toSubmit: ContactMessageInterface): Observable<boolean> {
-    return this.http.post<boolean>('http://localhost:8080/messages', toSubmit)
+    return this.http.post<boolean>('/messages', toSubmit)
       .pipe(
         retry(3),
         catchError(this.handleError),

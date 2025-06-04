@@ -32,7 +32,7 @@ export class ContactFormComponent {
 
   onSubmit() {
     if (this.contactForm.status == "VALID") {
-      let name = this.contactForm.controls.firstName.value! + this.contactForm.controls.lastName.value!
+      let name = this.contactForm.controls.firstName.value! + " " + this.contactForm.controls.lastName.value!
       let email = this.contactForm.controls.email.value!
       let company = this.contactForm.controls.company.value!
       let message = this.contactForm.controls.message.value!
