@@ -43,8 +43,9 @@ export class ContactFormComponent {
         company,
         message
       }
-
+      
       this.handler.submit(fullMessage);
+
       this.contactForm.reset();
     }
   }
