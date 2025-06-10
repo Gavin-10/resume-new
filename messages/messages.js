@@ -4,8 +4,6 @@ import { Firestore } from '@google-cloud/firestore';
 
 const router = express.Router();
 const db = new Firestore({
-    projectId: process.env.PROJECT_ID,
-    keyFilename: process.env.KEY_FILE,
     databaseId: "contact-messages",
 });
 
