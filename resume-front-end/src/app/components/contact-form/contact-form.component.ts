@@ -8,6 +8,7 @@ import { MatInput } from '@angular/material/input';
 import { MatLabel } from '@angular/material/form-field';
 import { MatError } from '@angular/material/form-field';
 import { MatButton } from '@angular/material/button';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 import { ContactMessageInterface } from '../../interfaces/contact-message-interface';
 
@@ -20,6 +21,8 @@ import { FormHandlerService } from '../../services/form-handler.service';
   styleUrl: './contact-form.component.scss'
 })
 export class ContactFormComponent {
+  private formSnackBar = inject(MatSnackBar);
+
   handler = inject(FormHandlerService);
 
   contactForm = new FormGroup({
@@ -30,7 +33,7 @@ export class ContactFormComponent {
     message: new FormControl(""),
   });
 
-  onSubmit() {
+  async onSubmit() {
     if (this.contactForm.status == "VALID") {
       let name = this.contactForm.controls.firstName.value! + " " + this.contactForm.controls.lastName.value!
       let email = this.contactForm.controls.email.value!
@@ -44,7 +47,7 @@ export class ContactFormComponent {
         message
       }
       
-      this.handler.submit(fullMessage);
+      await this.handler.submit(fullMessage);
 
       this.contactForm.reset();
     }

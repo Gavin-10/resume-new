@@ -1,6 +1,5 @@
 import { Component, inject } from '@angular/core';
 
-import { MatIcon } from '@angular/material/icon';
 import { MatCardActions } from '@angular/material/card';
 import { MatButton } from '@angular/material/button';
 import { MatSnackBar } from '@angular/material/snack-bar';
@@ -10,7 +9,7 @@ import { ContactFormComponent } from '../../components/contact-form/contact-form
 
 @Component({
   selector: 'app-contact',
-  imports: [MatIcon, MatCardActions, SiteCardComponent, MatButton, ContactFormComponent],
+  imports: [MatCardActions, SiteCardComponent, MatButton, ContactFormComponent],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
