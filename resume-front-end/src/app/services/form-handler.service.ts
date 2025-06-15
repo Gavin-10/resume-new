@@ -55,6 +55,11 @@ export class FormHandlerService {
         return throwError(() => new Error("Failed to add doc to database"));
       case 404:
         return throwError(() => new Error("Failed to connect to database API"));
+      case 418:
+        window.location.href = "https://www.google.com/";
+        return throwError(() => new Error("The server turned into a tea pot"));
+      case 400:
+        return throwError(() => new Error("Document validation failed"));
       default:
         return throwError(() => new Error("An unknown internal error has occured"));   
     }
