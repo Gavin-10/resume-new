@@ -3,8 +3,10 @@
 @use './app/styles/helpers';
 
 html, body { height: 100%; }
+
 body { 
     margin: 0; 
     font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-size: 1.2rem;
     color: white;
 }

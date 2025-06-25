@@ -1,5 +1,6 @@
 @use '../../styles/helpers';
 @use '../../styles/colors';
+@use '@angular/material' as mat;
 
 mat-card {
     height: 100%;
@@ -15,6 +16,14 @@ mat-card {
 
 .tertiary {
     background-color: colors.$tertiary-dark-text;
+}
+
+.transparent {
+    background-color: transparent;
+
+    @include mat.card-overrides((
+        elevated-container-elevation: transparent,
+    ));
 }
 
 .extra-margin {

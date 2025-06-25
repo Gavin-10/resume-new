@@ -1,32 +1,32 @@
 
 <p class="image-source">Images provided by <a href="https://www.vecteezy.com/">Vecteezy</a></p>
 <div class="image-group simple-center">
-    <img class="first" src="c++.png" alt="c++ logo" />
-    <img class="second" src="img5.png" alt="image of laptop" />
-    <img class="third" src="code.png" alt="image of code" />
+    <img loading="lazy" class="first" src="c++.png" alt="c++ logo" />
+    <img loading="lazy" class="second" src="img5.png" alt="image of laptop" />
+    <img loading="lazy" class="third" src="code.png" alt="image of code" />
 </div>
 
 <div class="container">
     <h1 class="large-title title-adjustment">Welcome</h1>
 
-    <app-site-card class="darker-text" title="Exciting News!" hasActions="true">
-        You have caught my website at an exciting time! As it's still in the early stages, things may not work
-        quite as expected. But do not fear! Updates will be coming almost daily and it will be complete in no 
-        time! Enjoy! In the future, more information will be displayed about the website bellow. Feel free to 
-        check out the project on Git Hub with the link bellow.
-        <br />
-        <br />
-        Update: Check out the resume page for the finalized content layout (and the repo for some exciting 
-        component reusage, ie all the cards). My info will be populated there in the following days and images
-        shortly after that.
-        <br />
-        <br />
-        Update: Info is now up to date on the resume page! I am still working on pictures but those will be
-        uploaded in the near future. Go check out the contact page and repo for some drafing I'm doing, which
-        is next to be implemented.
+    <app-site-card class="darker-text" [title]="landingData[0].title">
+        <div class="spaced-content" *ngFor="let content of landingData[0].contents">{{content}}</div>
+    </app-site-card>
+</div>
 
-        <mat-card-actions>
-            <button mat-flat-button (click)="repositoryLink()">Repository</button>
-        </mat-card-actions>
+
+<div class="transition-top"></div>
+<div class="black">
+    <div class="container">
+        <app-site-card [title]="landingData[1].title" background="transparent">
+            {{landingData[1].contents[0]}}
+        </app-site-card>
+    </div>
+</div>
+<div class="transition-bottom"></div>
+
+<div class="container">
+    <app-site-card class="darker-text" [title]="landingData[2].title">
+        <div class="spaced-content" *ngFor="let content of landingData[2].contents">{{content}}</div>
     </app-site-card>
 </div>

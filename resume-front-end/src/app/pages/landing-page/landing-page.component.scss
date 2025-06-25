@@ -78,3 +78,22 @@ img {
         margin-top: -40px;
     }
 }
+
+.spaced-content {
+    margin-bottom: 16px;
+}
+
+.transition-top {
+    background: linear-gradient(colors.$neutral-dark, black);
+    height: 100px;
+}
+
+.black {
+    background-color: black;
+}
+
+.transition-bottom {
+    background: linear-gradient(black, colors.$neutral-dark);
+    height: 100px;
+    margin-top: -8px;
+}

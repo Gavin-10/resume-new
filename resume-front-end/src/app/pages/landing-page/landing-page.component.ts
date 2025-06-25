@@ -1,17 +1,18 @@
 import { Component } from '@angular/core';
+import { NgFor } from '@angular/common';
 
-import { MatCardActions } from '@angular/material/card';
-import { MatButton } from '@angular/material/button';
 import { SiteCardComponent } from '../../components/site-card/site-card.component';
+
+import { ComplexCardInterface } from '../../interfaces/complex-card-interface';
+
+import LandingData from '../../Resources/landing/landing-data.json';
 
 @Component({
   selector: 'app-landing-page',
-  imports: [MatCardActions, MatButton, SiteCardComponent],
+  imports: [NgFor, SiteCardComponent],
   templateUrl: './landing-page.component.html',
   styleUrl: './landing-page.component.scss'
 })
 export class LandingPageComponent {
-    repositoryLink() {
-        window.location.href = 'https://github.com/Gavin-10/resume-new';
-    }
+    landingData: ComplexCardInterface[] = LandingData;
 }
