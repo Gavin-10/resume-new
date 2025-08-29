@@ -13,7 +13,7 @@
     {
         "title": "Interpreters",
         "image": "Interpreters.png",
-        "link": "",
+        "link": "https://github.com/Gavin-10/PseudoLang",
         "summary": {
             "title": "Interpreters - Summary",
             "content": "For the past 6 months, I have begun a new journey to creating compilers and interpreters. This fascination started when I looked into ways to contribute to the various tools I use in programming on a daily basis, and decided that language hacking would be a good suit for me. I therefore bought the fantastic book called Crafting Interpreters and began my studies. I have since learned several aspects of language creation, such as how to implement scoping, environments, variable interning, call frames, garbage collection, and so much more. This has truly elevated my understanding of programming in ways I could not imagine, and I am truly looking forward to contributing to languages in the near future. While Lox, the toy language I created directly from the book, is implemented in Java (tree walker) and C (Pratt compiler) separately, I am now reimplementing the language in C++ which will compile an AST to bytecode, and include several modern language features like compound assignment, arrays, lambdas, computed variables, break and continue statements, and more. "
